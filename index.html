@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Era — Premium Women's Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ LOADER ═══════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">डिज़ाइन एरा</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">
+      <span class="brand-hindi">डिज़ाइन एरा</span>
+      <span class="brand-en">DESIGN ERA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#designer">Design Studio</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-search" aria-label="Search">&#9906;</button>
+      <button class="nav-cart" aria-label="Cart">&#9752; <span class="cart-count">0</span></button>
+      <button class="nav-toggle" aria-label="Menu" id="menuToggle">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose">&#10005;</button>
+    <ul class="drawer-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#designer">Design Studio</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient-orb orb1"></div>
+      <div class="hero-gradient-orb orb2"></div>
+      <div class="hero-gradient-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">New Collection 2026</p>
+      <h1 class="hero-title">
+        <span class="line-reveal">Where Tradition</span>
+        <em class="line-reveal script">Meets Elegance</em>
+      </h1>
+      <p class="hero-sub">Premium ethnic, modern & western wear — crafted for the Indian woman of today</p>
+      <div class="hero-cta">
+        <a href="#categories" class="btn btn-primary">Explore Collections</a>
+        <a href="#designer" class="btn btn-outline">Design Your Own</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Floating fabric swatches -->
+    <div class="hero-swatches">
+      <div class="swatch s1" title="Royal Maroon"></div>
+      <div class="swatch s2" title="Deep Teal"></div>
+      <div class="swatch s3" title="Gold Dust"></div>
+      <div class="swatch s4" title="Ivory Cream"></div>
+      <div class="swatch s5" title="Blush Rose"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MARQUEE ═══════════════════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Ethnic Luxe &nbsp;✦&nbsp;</span>
+      <span>Modern Silhouettes &nbsp;✦&nbsp;</span>
+      <span>Western Chic &nbsp;✦&nbsp;</span>
+      <span>Handcrafted Embroidery &nbsp;✦&nbsp;</span>
+      <span>Premium Fabrics &nbsp;✦&nbsp;</span>
+      <span>Bespoke Designs &nbsp;✦&nbsp;</span>
+      <span>Artisan Craftsmanship &nbsp;✦&nbsp;</span>
+      <span>Ethnic Luxe &nbsp;✦&nbsp;</span>
+      <span>Modern Silhouettes &nbsp;✦&nbsp;</span>
+      <span>Western Chic &nbsp;✦&nbsp;</span>
+      <span>Handcrafted Embroidery &nbsp;✦&nbsp;</span>
+      <span>Premium Fabrics &nbsp;✦&nbsp;</span>
+      <span>Bespoke Designs &nbsp;✦&nbsp;</span>
+      <span>Artisan Craftsmanship &nbsp;✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ CATEGORIES ═══════════════════════════ -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our Collections</p>
+        <h2 class="section-title">Curated for Every Occasion</h2>
+        <p class="section-desc">From sacred celebrations to boardroom brilliance — discover wear crafted for every story.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="cat-tabs" role="tablist">
+        <button class="cat-tab active" data-cat="ethnic" role="tab" aria-selected="true">Ethnic</button>
+        <button class="cat-tab" data-cat="modern" role="tab" aria-selected="false">Modern Fusion</button>
+        <button class="cat-tab" data-cat="western" role="tab" aria-selected="false">Western</button>
+      </div>
+
+      <!-- Ethnic Panel -->
+      <div class="cat-panel active" id="panel-ethnic">
+        <div class="product-grid">
+          <div class="product-card" data-aos>
+            <div class="product-img ethnic-1">
+              <div class="product-badge">New</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Bridal Lehenga</span>
+              <h3>Crimson Zardosi Lehenga</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#8B1A2E;" title="Royal Maroon"></span>
+                <span class="color-dot" style="background:#C8993E;" title="Gold"></span>
+                <span class="color-dot" style="background:#1A1A2E;" title="Midnight"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹45,000</span>
+                <span class="price-old">₹60,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img ethnic-2">
+              <div class="product-badge sale">Sale</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Festive Saree</span>
+              <h3>Banarasi Silk Drape</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#1B5E6E;" title="Teal"></span>
+                <span class="color-dot" style="background:#C8993E;" title="Gold"></span>
+                <span class="color-dot" style="background:#6B2C6E;" title="Purple"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹18,500</span>
+                <span class="price-old">₹24,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img ethnic-3">
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Anarkali Suit</span>
+              <h3>Pearl Chikankari Anarkali</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#F5F0E8;" title="Ivory"></span>
+                <span class="color-dot" style="background:#E8C4C4;" title="Blush"></span>
+                <span class="color-dot" style="background:#2E5D4B;" title="Forest Green"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹12,800</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img ethnic-4">
+              <div class="product-badge">Bestseller</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Sharara Set</span>
+              <h3>Ivory Mirror-Work Sharara</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#F5F0E8;" title="Ivory"></span>
+                <span class="color-dot" style="background:#D4AF37;" title="Gold"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹22,000</span>
+                <span class="price-old">₹28,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Fusion Panel -->
+      <div class="cat-panel" id="panel-modern">
+        <div class="product-grid">
+          <div class="product-card" data-aos>
+            <div class="product-img modern-1">
+              <div class="product-badge">Trending</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Fusion Kurta</span>
+              <h3>Linen Patchwork Kurta Set</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#2E5D4B;" title="Forest Green"></span>
+                <span class="color-dot" style="background:#8B6E47;" title="Camel"></span>
+                <span class="color-dot" style="background:#3D3D3D;" title="Charcoal"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹8,500</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img modern-2">
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Fusion Co-ord</span>
+              <h3>Printed Dhoti-Pant Set</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#1B5E6E;" title="Teal"></span>
+                <span class="color-dot" style="background:#E8C4C4;" title="Blush"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹6,200</span>
+                <span class="price-old">₹8,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img modern-3">
+              <div class="product-badge">New</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Cape Jacket</span>
+              <h3>Embroidered Blazer Cape</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#1A1A2E;" title="Midnight"></span>
+                <span class="color-dot" style="background:#C8993E;" title="Gold"></span>
+                <span class="color-dot" style="background:#6B2C6E;" title="Purple"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹14,500</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img modern-4">
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Jacket Saree</span>
+              <h3>Contemporary Concept Saree</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#2E5D4B;" title="Green"></span>
+                <span class="color-dot" style="background:#8B1A2E;" title="Red"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹16,800</span>
+                <span class="price-old">₹20,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Western Panel -->
+      <div class="cat-panel" id="panel-western">
+        <div class="product-grid">
+          <div class="product-card" data-aos>
+            <div class="product-img western-1">
+              <div class="product-badge">Trending</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Evening Wear</span>
+              <h3>Velvet Wrap Gown</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#1A1A2E;" title="Midnight Navy"></span>
+                <span class="color-dot" style="background:#6B2C6E;" title="Plum"></span>
+                <span class="color-dot" style="background:#2E5D4B;" title="Emerald"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹24,000</span>
+                <span class="price-old">₹32,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img western-2">
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Power Suit</span>
+              <h3>Tailored Blazer & Pant Set</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#3D3D3D;" title="Charcoal"></span>
+                <span class="color-dot" style="background:#F5F0E8;" title="Ivory"></span>
+                <span class="color-dot" style="background:#8B6E47;" title="Camel"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹18,900</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img western-3">
+              <div class="product-badge">New</div>
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Co-ord Set</span>
+              <h3>Satin Floral Brunch Set</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#E8C4C4;" title="Blush"></span>
+                <span class="color-dot" style="background:#C8993E;" title="Gold"></span>
+                <span class="color-dot" style="background:#1B5E6E;" title="Teal"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹11,500</span>
+                <span class="price-old">₹15,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos>
+            <div class="product-img western-4">
+              <div class="product-actions">
+                <button class="p-btn wishlist" aria-label="Wishlist">♡</button>
+                <button class="p-btn cart-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Casual Luxe</span>
+              <h3>Linen Wide-Leg Trouser Set</h3>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#8B6E47;" title="Camel"></span>
+                <span class="color-dot" style="background:#3D3D3D;" title="Charcoal"></span>
+              </div>
+              <div class="product-price">
+                <span class="price-new">₹7,800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ COLOUR PALETTE ═══════════════════════════ -->
+  <section class="palette-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our Signature Palette</p>
+        <h2 class="section-title">Colours That Tell Stories</h2>
+      </div>
+      <div class="palette-grid">
+        <div class="palette-card" style="--clr:#8B1A2E;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Royal Maroon</h4>
+            <p>Bridal &amp; festive</p>
+            <span>#8B1A2E</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#C8993E;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Gold Dust</h4>
+            <p>Embellishment &amp; trim</p>
+            <span>#C8993E</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#1B5E6E;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Deep Teal</h4>
+            <p>Modern fusion wear</p>
+            <span>#1B5E6E</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#F5F0E8;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Ivory Cream</h4>
+            <p>Ethereal &amp; minimal</p>
+            <span>#F5F0E8</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#E8C4C4;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Blush Rose</h4>
+            <p>Soft western luxe</p>
+            <span>#E8C4C4</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#2E5D4B;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Emerald Forest</h4>
+            <p>Contemporary ethnic</p>
+            <span>#2E5D4B</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#6B2C6E;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Plum Royale</h4>
+            <p>Evening &amp; occasion</p>
+            <span>#6B2C6E</span>
+          </div>
+        </div>
+        <div class="palette-card" style="--clr:#1A1A2E;">
+          <div class="palette-swatch"></div>
+          <div class="palette-info">
+            <h4>Midnight Navy</h4>
+            <p>Western formal</p>
+            <span>#1A1A2E</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DESIGN STUDIO ═══════════════════════════ -->
+  <section class="designer-section" id="designer">
+    <div class="container">
+      <div class="designer-layout">
+        <div class="designer-info">
+          <p class="section-label">Bespoke Studio</p>
+          <h2 class="section-title">Design Your Own Masterpiece</h2>
+          <p>Every woman deserves a garment that speaks her soul. Use our design studio to create a custom outfit tailored perfectly to your vision.</p>
+          <ul class="designer-steps">
+            <li><span class="step-num">01</span><div><strong>Choose Silhouette</strong><p>Lehenga, Saree, Anarkali, Gown, or Western</p></div></li>
+            <li><span class="step-num">02</span><div><strong>Pick Fabric</strong><p>Silk, Chiffon, Georgette, Velvet, Linen, Banarasi</p></div></li>
+            <li><span class="step-num">03</span><div><strong>Select Colour</strong><p>From our curated 48-colour premium palette</p></div></li>
+            <li><span class="step-num">04</span><div><strong>Add Embellishments</strong><p>Zardosi, Chikankari, Mirror-work, Resham</p></div></li>
+            <li><span class="step-num">05</span><div><strong>Custom Measurements</strong><p>Tailored to your exact body measurements</p></div></li>
+          </ul>
+        </div>
+
+        <div class="designer-studio">
+          <div class="studio-card">
+            <div class="studio-preview" id="studioPreview">
+              <div class="mannequin">
+                <div class="mannequin-top" id="mannequinTop"></div>
+                <div class="mannequin-bottom" id="mannequinBottom"></div>
+                <div class="mannequin-embellishment" id="mannequinEmbellishment"></div>
+              </div>
+              <div class="studio-label" id="studioLabel">Your Design</div>
+            </div>
+
+            <div class="studio-controls">
+              <div class="control-group">
+                <label>Silhouette</label>
+                <div class="control-options" id="silhouetteOpts">
+                  <button class="opt-btn active" data-sil="lehenga">Lehenga</button>
+                  <button class="opt-btn" data-sil="saree">Saree</button>
+                  <button class="opt-btn" data-sil="anarkali">Anarkali</button>
+                  <button class="opt-btn" data-sil="gown">Gown</button>
+                  <button class="opt-btn" data-sil="western">Western</button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Fabric</label>
+                <div class="control-options" id="fabricOpts">
+                  <button class="opt-btn active" data-fab="silk">Silk</button>
+                  <button class="opt-btn" data-fab="chiffon">Chiffon</button>
+                  <button class="opt-btn" data-fab="velvet">Velvet</button>
+                  <button class="opt-btn" data-fab="linen">Linen</button>
+                  <button class="opt-btn" data-fab="banarasi">Banarasi</button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Colour</label>
+                <div class="color-palette-pick" id="colorPick">
+                  <button class="cp-swatch active" data-hex="#8B1A2E" style="background:#8B1A2E;" title="Royal Maroon"></button>
+                  <button class="cp-swatch" data-hex="#C8993E" style="background:#C8993E;" title="Gold Dust"></button>
+                  <button class="cp-swatch" data-hex="#1B5E6E" style="background:#1B5E6E;" title="Deep Teal"></button>
+                  <button class="cp-swatch" data-hex="#F5F0E8" style="background:#F5F0E8;" title="Ivory"></button>
+                  <button class="cp-swatch" data-hex="#E8C4C4" style="background:#E8C4C4;" title="Blush"></button>
+                  <button class="cp-swatch" data-hex="#2E5D4B" style="background:#2E5D4B;" title="Emerald"></button>
+                  <button class="cp-swatch" data-hex="#6B2C6E" style="background:#6B2C6E;" title="Plum"></button>
+                  <button class="cp-swatch" data-hex="#1A1A2E" style="background:#1A1A2E;" title="Midnight"></button>
+                  <button class="cp-swatch" data-hex="#8B6E47" style="background:#8B6E47;" title="Camel"></button>
+                  <button class="cp-swatch" data-hex="#3D3D3D" style="background:#3D3D3D;" title="Charcoal"></button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Embellishments</label>
+                <div class="control-options" id="embelOpts">
+                  <button class="opt-btn active" data-emb="none">None</button>
+                  <button class="opt-btn" data-emb="zardosi">Zardosi</button>
+                  <button class="opt-btn" data-emb="chikankari">Chikankari</button>
+                  <button class="opt-btn" data-emb="mirror">Mirror-work</button>
+                  <button class="opt-btn" data-emb="resham">Resham</button>
+                </div>
+              </div>
+
+              <button class="btn btn-primary studio-cta" id="requestQuote">Request Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ LOOKBOOK ═══════════════════════════ -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Lookbook 2026</p>
+        <h2 class="section-title">The Editorial</h2>
+      </div>
+    </div>
+    <div class="lookbook-grid">
+      <div class="lb-item lb-large" data-aos>
+        <div class="lb-img lb-img-1"></div>
+        <div class="lb-caption"><span>Bridal Edit</span></div>
+      </div>
+      <div class="lb-col">
+        <div class="lb-item" data-aos>
+          <div class="lb-img lb-img-2"></div>
+          <div class="lb-caption"><span>Festive Season</span></div>
+        </div>
+        <div class="lb-item" data-aos>
+          <div class="lb-img lb-img-3"></div>
+          <div class="lb-caption"><span>Modern Luxe</span></div>
+        </div>
+      </div>
+      <div class="lb-col">
+        <div class="lb-item" data-aos>
+          <div class="lb-img lb-img-4"></div>
+          <div class="lb-caption"><span>Western Evening</span></div>
+        </div>
+        <div class="lb-item" data-aos>
+          <div class="lb-img lb-img-5"></div>
+          <div class="lb-caption"><span>Office Chic</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our Clients Say</p>
+        <h2 class="section-title">Stories of Elegance</h2>
+      </div>
+      <div class="testi-track">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The bridal lehenga was beyond my dreams. Every stitch, every bead — absolute perfection. Design Era understood my vision completely."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av1"></div>
+            <div><strong>Priya Sharma</strong><span>Mumbai</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The fusion kurta set I designed online arrived in 10 days, fit perfectly, and the quality of the hand embroidery is museum-worthy."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av2"></div>
+            <div><strong>Ananya Reddy</strong><span>Bengaluru</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"I ordered the velvet gown for a black-tie dinner. The fit was immaculate and I received compliments all evening. Truly premium."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av3"></div>
+            <div><strong>Meera Joshi</strong><span>Delhi</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"From the fabric swatches to the final garment, the experience was seamless. The saree draping guide was an added bonus!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar av4"></div>
+            <div><strong>Sana Qureshi</strong><span>Hyderabad</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ NEWSLETTER ═══════════════════════════ -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div class="nl-ornament">✦</div>
+      <h2>Receive Exclusive Drops</h2>
+      <p>Be the first to know about new collections, bespoke slots, and member-only offers.</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="nl-fine">No spam. Unsubscribe anytime. We respect your inbox.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title">Visit Our Atelier</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Studio Address</strong>
+                <p>14, Design Era Atelier, MG Road,<br/>Mumbai 400001, Maharashtra</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@designera.in</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">🕐</span>
+              <div>
+                <strong>Studio Hours</strong>
+                <p>Mon–Sat: 10am – 7pm<br/>Sunday: By appointment</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+            <a href="#" aria-label="Pinterest" class="social-link">Pinterest</a>
+            <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Priya" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Sharma" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Interested In</label>
+            <select id="service">
+              <option value="">Select a category…</option>
+              <option>Ethnic Wear</option>
+              <option>Modern Fusion</option>
+              <option>Western Wear</option>
+              <option>Bespoke Design</option>
+              <option>Bridal Collection</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" rows="4" placeholder="Tell us about your vision…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-mark">
+            <span class="brand-hindi">डिज़ाइन एरा</span>
+            <span class="brand-en">DESIGN ERA</span>
+          </div>
+          <p>Premium women's fashion blending the soul of India with contemporary global aesthetics.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#categories">Ethnic Wear</a></li>
+            <li><a href="#categories">Modern Fusion</a></li>
+            <li><a href="#categories">Western Wear</a></li>
+            <li><a href="#designer">Bespoke Design</a></li>
+            <li><a href="#lookbook">Lookbook</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Care Instructions</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Artisans</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Design Era. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════ SCROLL PROGRESS ═══════════════════════════ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══════════════════════════ BACK TO TOP ═══════════════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- ═══════════════════════════ WHATSAPP FLOAT ═══════════════════════════ -->
+  <a href="https://wa.me/919876543210?text=Hi%20Design%20Era!%20I%20am%20interested%20in%20your%20collection."
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ═══════════════════════════ SEARCH OVERLAY ═══════════════════════════ -->
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+    <div class="search-box">
+      <input type="search" class="search-input" id="searchInput" placeholder="Search for lehenga, saree, gown…" autocomplete="off" />
+      <div class="search-icon">⌕</div>
+    </div>
+    <div class="search-suggestions">
+      <p class="search-label">Popular Searches</p>
+      <div class="search-tags">
+        <button class="stag">Bridal Lehenga</button>
+        <button class="stag">Banarasi Saree</button>
+        <button class="stag">Velvet Gown</button>
+        <button class="stag">Power Suit</button>
+        <button class="stag">Chikankari</button>
+        <button class="stag">Zardosi</button>
+        <button class="stag">Co-ord Set</button>
+        <button class="stag">Cape Jacket</button>
+      </div>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+  <div class="search-overlay-bg" id="searchBg"></div>
+
+  <!-- ═══════════════════════════ CART SIDEBAR ═══════════════════════════ -->
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Bag <span class="cart-item-count" id="cartItemCount">0 items</span></h3>
+      <button class="cart-sidebar-close" id="cartSidebarClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛍️</div>
+        <p>Your bag is empty</p>
+        <a href="#categories" class="btn btn-outline" id="cartShopNow">Explore Collections</a>
+      </div>
+      <ul class="cart-items" id="cartItems"></ul>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-shipping">
+        <span>Shipping</span>
+        <span class="free-ship">Free</span>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn btn-primary cart-checkout">Proceed to Checkout</button>
+      <button class="btn btn-outline cart-continue" id="cartContinue">Continue Shopping</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- ═══════════════════════════ QUICK VIEW MODAL ═══════════════════════════ -->
+  <dialog class="qv-modal" id="qvModal">
+    <div class="qv-inner">
+      <button class="qv-close" id="qvClose" aria-label="Close">✕</button>
+      <div class="qv-img-wrap">
+        <div class="qv-img" id="qvImg"></div>
+        <div class="qv-badge" id="qvBadge"></div>
+      </div>
+      <div class="qv-info">
+        <span class="product-cat" id="qvCat"></span>
+        <h2 class="qv-title" id="qvTitle"></h2>
+        <div class="qv-rating">★★★★★ <span>(48 reviews)</span></div>
+        <div class="product-price" style="margin:1rem 0 1.5rem;" id="qvPrice"></div>
+        <div class="qv-colors">
+          <p class="ctrl-label">Colour</p>
+          <div id="qvColors"></div>
+        </div>
+        <div class="qv-sizes">
+          <p class="ctrl-label">Size <button class="size-guide-link" id="openSizeGuide">Size Guide</button></p>
+          <div class="size-options" id="qvSizes">
+            <button class="size-btn">XS</button>
+            <button class="size-btn active">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+            <button class="size-btn">XXL</button>
+          </div>
+        </div>
+        <div class="qv-qty">
+          <p class="ctrl-label">Quantity</p>
+          <div class="qty-control">
+            <button class="qty-btn" id="qtyMinus">−</button>
+            <span class="qty-val" id="qtyVal">1</span>
+            <button class="qty-btn" id="qtyPlus">+</button>
+          </div>
+        </div>
+        <div class="qv-actions">
+          <button class="btn btn-primary qv-add-cart" id="qvAddCart">Add to Bag</button>
+          <button class="btn btn-outline qv-wishlist" id="qvWishlist">♡ Wishlist</button>
+        </div>
+        <div class="qv-meta">
+          <div class="qv-meta-row"><span>🧵</span><span id="qvFabric">Premium Silk</span></div>
+          <div class="qv-meta-row"><span>🚚</span><span>Free shipping · Delivered in 7-10 days</span></div>
+          <div class="qv-meta-row"><span>↩</span><span>Easy 15-day returns & exchanges</span></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ═══════════════════════════ SIZE GUIDE MODAL ═══════════════════════════ -->
+  <dialog class="modal size-guide-modal" id="sizeGuideModal">
+    <div class="modal-inner">
+      <button class="modal-close" id="sizeGuideClose">✕</button>
+      <h3>Size Guide</h3>
+      <p>All measurements in centimetres (cm). For best results, measure over light clothing.</p>
+      <div class="size-table-wrap">
+        <table class="size-table">
+          <thead>
+            <tr><th>Size</th><th>Bust</th><th>Waist</th><th>Hips</th><th>Length</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>XS</td><td>76–80</td><td>60–64</td><td>84–88</td><td>52–54</td></tr>
+            <tr><td>S</td><td>81–85</td><td>65–69</td><td>89–93</td><td>55–57</td></tr>
+            <tr><td>M</td><td>86–90</td><td>70–74</td><td>94–98</td><td>58–60</td></tr>
+            <tr><td>L</td><td>91–95</td><td>75–79</td><td>99–103</td><td>61–63</td></tr>
+            <tr><td>XL</td><td>96–100</td><td>80–84</td><td>104–108</td><td>64–66</td></tr>
+            <tr><td>XXL</td><td>101–106</td><td>85–90</td><td>109–114</td><td>67–69</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-tip">💡 <strong>Tip:</strong> For ethnic wear like lehenga & saree, we recommend ordering your regular size. For tailored fits, choose <a href="#designer">Bespoke Design</a>.</p>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Quote Modal -->
+  <dialog class="modal" id="quoteModal">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose">&#10005;</button>
+      <h3>Request a Bespoke Quote</h3>
+      <p id="quoteDesc"></p>
+      <form id="quoteForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="email@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" />
+        </div>
+        <div class="form-group">
+          <label>Special Instructions</label>
+          <textarea rows="3" placeholder="Any specific requirements…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
